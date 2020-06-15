@@ -9,12 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install Carthage
-      run: |
-        git clone https://github.com/Carthage/Carthage
-        cd Carthage
-        make install
-        
+
     - name: Bootstrap Carthage
       run: sh scripts/bootstrap.sh
       
